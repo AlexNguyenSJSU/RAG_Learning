@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "key-data-extraction"
+version = "0.1.0"
+description = "Extract Key data (name, lastname, country) from text using Google Gemini Flash and Langchain"
+authors = [
+    "AlexNguyenSJSU <alexnguyen091203@gmail.com>"
+]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+python-dotenv = "^1.0.1"
+langchain-community = "0.3.21"
+langchain-core = "0.3.51"
+langchain-experimental = "0.3.4"
+langchain-google-genai = "2.0.10"
+langchain-text-splitters = "0.3.8"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
