@@ -57,7 +57,6 @@ This will:
 
 - Read `examples/input.txt` (unstructured text).
 - Extract `name`, `lastname`, and `country` for each person mentioned.
-- Write the structured JSON to `examples/output.json`.
   
 ---
 
