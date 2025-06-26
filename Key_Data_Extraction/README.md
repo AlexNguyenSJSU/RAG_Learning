@@ -75,25 +75,12 @@ Key_Data_Extraction/
 
 ---
 
-## Testing
-
-We use `pytest` to verify our extractor:
-
-```bash
-poetry run pytest --maxfail=1 --disable-warnings -q
-```
-
-Add new tests under the `tests/` directory (you may need to create it) following `pytest` conventions.
-
----
-
 ## Extending the Extractor
 
 - **New fields:**
 
   1. Update your Pydantic schema in `models.py` with the new field.
   2. Adjust the prompting logic in `extractor.py` to include instructions for the new field.
-  3. Add sample cases to `examples/` and corresponding unit tests.
 
 - **Alternative output formats:**
 
@@ -109,12 +96,6 @@ Add new tests under the `tests/` directory (you may need to create it) following
 4. **Open a Pull Request**.
 
 Please make sure to run tests before submitting, and follow the existing code style.
-
----
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
