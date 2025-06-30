@@ -67,4 +67,6 @@ if __name__ == "__main__":
     extracted_data_comment = extract_key_data(comment_text)
     print(extracted_data_comment)
     print("\n----------\n")
-    
+    print("Extracted People:")
+    extracted_people = ExtractedPeople(people=[extract_key_data(text_input), extract_key_data(comment_text)])
+    print(extracted_people)

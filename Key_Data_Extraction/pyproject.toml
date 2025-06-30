@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "key-data-extraction"
+name = "ask_over_a_DB"
 version = "0.1.0"
-description = "Extract Key data (name, lastname, country) from text using Google Gemini Flash and Langchain"
+description = "Ask natural language questions over a database using Google Gemini Flash and Langchain"
 authors = [
     "AlexNguyenSJSU <alexnguyen091203@gmail.com>"
 ]
@@ -15,6 +15,9 @@ langchain-core = "0.3.51"
 langchain-experimental = "0.3.4"
 langchain-google-genai = "2.0.10"
 langchain-text-splitters = "0.3.8"
+sqlalchemy = "2.0.41"
+mysql-connector-python = "9.3.0"
+faiss-cpu = "1.11.0"
 
 [build-system]
 requires = ["poetry-core"]
