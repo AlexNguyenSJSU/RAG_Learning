@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "ask_over_a_DB"
+name = "sentiment_analysis"
 version = "0.1.0"
-description = "Ask natural language questions over a database using Google Gemini Flash and Langchain"
+description = "Analyze text to determine the expressed sentiment, categorizing it as positive, negative, or neutral using Google Gemini Flash and Langchain"
 authors = [
     "AlexNguyenSJSU <alexnguyen091203@gmail.com>"
 ]
@@ -12,12 +12,8 @@ python = "^3.9"
 python-dotenv = "^1.0.1"
 langchain-community = "0.3.21"
 langchain-core = "0.3.51"
-langchain-experimental = "0.3.4"
 langchain-google-genai = "2.0.10"
 langchain-text-splitters = "0.3.8"
-sqlalchemy = "2.0.41"
-mysql-connector-python = "9.3.0"
-faiss-cpu = "1.11.0"
 
 [build-system]
 requires = ["poetry-core"]

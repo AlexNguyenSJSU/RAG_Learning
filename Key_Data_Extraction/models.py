@@ -18,3 +18,18 @@ class KeyDataExtractionRequest(BaseModel):
 
 class ExtractedPeople(BaseModel):
     people: List[KeyDataExtractionRequest]
+
+class SentimentAnalysisRequest(BaseModel):
+    """Information about a sentiment analysis request."""
+    sentiment: str = Field(
+        ...,
+        description="The sentiment of the text"
+    )
+    aggressiveness: int = Field(
+        ...,
+        description="How aggressive the text is on a scale from 1 to 10"
+    )
+    language: str = Field(
+        ...,
+        description="The language the text is written in"
+    )
